@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Developer Portfolio</title>
+   <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  border: 2px solid black;
+  max-width: 900px;
+  margin: auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2em;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+}
+
+.projects ul,
+.education ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.projects ul,
+.education ul {
+  list-style: none;
+  padding: 15px ;
+  line-height: 30px;
+}
+
+.projects ul li {
+  margin: 5px 0;
+  border: 1px solid black;
+  padding: 5px;
+}
+.projects ,
+.education {
+  margin: 5px 0;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.reviews {
+  padding: 20px 0;
+}
+
+.reviews h2 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-bottom: 15px;
+}
+
+.review-boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.review {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.review span {
+  color: gray;
+  font-size: 0.9em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+   </style> 
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo"> Thiago Amarilla</div>
+    <nav class="nav">
+      <a href="#">Home</a> /
+      <a href="#">Projects</a> /
+      <a href="#">Articles</a> /
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Frontend Developer</h1>
+    <p>html only with proper layout, no styling</p>
+  </section>
+
+  <main class="main-content">
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>HTML Only Portfolio</li>
+        <li>Calculator</li>
+        <li>Quiz App</li>
+        <li>Countdown Timer</li>
+        <li>Product Upcoming Page</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Work Experience</h2>
+      <div>
+        <strong>roadmap.sh</strong>
+        <p>Solved all the frontend projects</p>
+        <a href="#">Visit my Profile</a>
+      </div>
+      <div>
+        <strong>OpenSource Work</strong>
+        <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+        <a href="https://github.com/Vikz-00">Visit my GitHub Profile</a>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+      <p>Courses I took:</p>
+      <ul>
+        <li>-Object Oriented Programming</li>
+        <li>-Data Structures and Algorithms</li>
+        <li>-Web Engineering</li>
+        <li>-Artificial Intelligence</li>
+        <li>-Human Computer Interaction</li>
+        <li>-Computer Graphics</li>
+        <li>-Database Management Systems</li>
+        <li>-Distributed Database Systems</li>
+        <li>-Discreet Mathematics</li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="reviews">
+    <h2>Reviews from my Teachers</h2>
+    <div class="review-boxes">
+      <div class="review">
+        <p>John doe was a brilliant student; always stood out with his assignments.</p>
+        <span>Maria Ortigoza<br/>Assistant Professor</span>
+      </div>
+      <div class="review">
+        <p>John doe was a brilliant student; always stood out with his assignments.</p>
+        <span>Fabian Quintana<br/>Assistant Professor</span>
+      </div>
+      <div class="review">
+        <p>John doe was a brilliant student; always stood out with his assignments.</p>
+        <span>Danilo Franco<br/>Assistant Professor</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© all rights reserved 2025</p>
+  </footer>
+</body>
+</html>
