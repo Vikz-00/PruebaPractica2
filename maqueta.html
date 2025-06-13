@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .grip-container{
+    border: solid 1px black;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template: 
+    "header  header  header" 250px
+    "main  main  main" 250px
+    "footer footer footer" 250px
+    ;
+  }
+  /* Distribucion de areas del grip */
+  .grip-container header{
+    grid-area: header ;
+    border: solid 1px black;
+  }
+    .grip-container main{
+    grid-area: main ;
+    border: solid 1px black;
+    display: grid;
+    grid-template: 
+    "projects  workexperience  education"
+    "calculator  workexperience  education"
+    "quiz  workexperience  education"
+    "countdown  openwork  education"
+    "productpage  openwork  education"
+    ;
+  }
+  .grip-container footer{
+    grid-area: footer ;
+    border: solid 1px black;
+    display: grid;
+    gap: 20px;
+    grid-template: 
+    "titulo  titulo  titulo" auto
+    "testimonio  testimonio2  testimonio3" 100px
+    "derechos derechos derechos" 100px
+    ;
+  }
+  /* Distribuvion del main */
+.grip-container main .pr {
+  grid-area: projects;
+  border: solid 0.5px black;
+}
+.grip-container main .ca {
+  grid-area: calculator;
+  border: solid 0.5px black;
+}
+.grip-container main .quiz {
+  grid-area: quiz;
+  border: solid 0.5px black;
+}
+.grip-container main .cr {
+  grid-area: countdown;
+  border: solid 0.5px black;
+}
+.grip-container main .pp {
+  grid-area: productpage;
+  border: solid 0.5px black;
+}.grip-container main .we {
+  grid-area: workexperience;
+  border: solid 0.5px black;
+}
+.grip-container main .ow {
+  grid-area: openwork;
+  border: solid 0.5px black;
+}
+.grip-container main .ed {
+  grid-area: education;
+  border: solid 0.5px black;
+}
+  /* Fin de distribucion */
+  /* Distribucion del footer */
+  .grip-container footer p{
+    grid-area: titulo;
+    text-align: center;
+  }
+
+  .grip-container footer .test1{
+    grid-area: testimonio;
+    border: solid 1px black;
+    border-radius: 25px;
+    text-align: center;
+  }
+    .grip-container footer .test3{
+    grid-area: testimonio2;
+    border: solid 1px black;
+    border-radius: 25px;
+    text-align: center;
+  }
+    .grip-container footer .test2{
+    grid-area: testimonio3;
+    border: solid 1px black;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+      .grip-container footer .derechos{
+    grid-area: derechos;
+    background-color: lavender;
+    text-align: center;
+  }
+  /* FIn de distribucion */
+  header nav span{
+    padding: 30px;
+  }
+  header section h1, p{
+    text-align: center;
+    font-size: 40px;
+  }
+  </style>
+</head>
+<body>
+  <section class="grip-container">
+    <header>
+      <nav>
+        <span>Thiago Amarilla</span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span>Home</span>
+        <span>Projects</span>
+        <span>Articles</span>
+        <span>Contact</span>
+      </nav>
+      <section>
+        <h1>Frontend Developer</h1>
+        <p>Final exam</p>
+      </section>
+    </header>
+    <main>
+      <section class="pr">projects</section>
+      <section class="ca">Calculator</section>
+      <section class="quiz">Quiz app</section>
+      <section class="cr">Countdown timer</section>
+      <section class="pp">Product Upcoming page</section>
+      <section class="we">work experience</section>
+      <section class="ow">OpenSource work</section>
+      <section class="ed">Education</section>
+    </main>
+    <footer>
+      <p>Reviews from my Teachers</p>
+      <section class="test1">gfgh</section>
+      <section class="test2">dghdfg</section>
+      <section class="test3">dfghdfghd</section>
+      <p class="derechos">&COPY; ALL RIGHTS RESERVED 2025</p>
+    </footer>
+  </section>
+</body>
+</html>
